@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Poop Survey Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <h1 id="title">Poop Survey Form</h1>
+    <p id="description" >This is a poopy survey form. :D</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label" >Name<input type="text" id="name" required name="name" placeholder="Enter name"></label>
+        <label for="email" id="email-label" >Email<input type="email" id="email" required name="email" placeholder="Enter email" ></label>
+        Gender:
+        <label for="male" >Male <input type="radio" id="male" name="gender" value="male" class="inline" ></label>
+        <label for="female" >Female <input type="radio" id="female" name="gender" value="female" class="inline" ></label>
+        <label for="other" >Other <input type="radio" id="other" name="gender" value="other" class="inline" ></label>
+      </fieldset>
+      <fieldset>
+        <label for="number" id="number-label" >Number of poops per day<input type="number" id="number" required min="1" max="20" required name="poops-per-day" placeholder="1" ></label>
+        <label for="dropdown" >Poop color
+           <select id="dropdown" required name="poopcolor" >
+             <option value="">(pick one)</option>
+             <option value="1">Brown</option>
+             <option value="2">Green</option>
+             <option value="3">Brown and green</option>
+             <option value="4">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="consent">Check box to consent to share info to partners <input type="checkbox" id="consent" name="consent" value="1" class="inline" ></label>
+        <label id="terms">Agree to <a href="" target="_blank" >terms and conditions</a> <input type="checkbox" id="terms" name="terms" value="1" class="inline" required ></label>
+      </fieldset>
+      <fieldset>
+        <label for="share-info">Share pooping opinions
+          <textarea id="share-info" name="share-info" placeholder="Share your opinion :D"></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit">
+    </form>
+  </body>
+</html>
